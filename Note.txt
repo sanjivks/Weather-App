@@ -1,0 +1,20 @@
+1.defer Attribute: Adding defer to the <script> tag ensures the script executes only after the HTML document has been fully parsed, 
+making it safe to access DOM elements.
+
+2.No Need for DOMContentLoaded: Since defer guarantees the script runs after the DOM is ready, there's no need for additional event listeners to
+ delay execution.
+
+3.Separation of Concerns: The JavaScript is modular and located in a separate file, while your HTML remains clean.
+
+
+
+Benefits of Using defer:
+1.Improved Performance:
+HTML parsing and script downloading occur in parallel, reducing page load times.
+
+2.Safer DOM Access:
+Since the script executes after the DOM is fully parsed, you don't need to explicitly wait for DOMContentLoaded to access DOM elements.
+
+3.Predictable Script Order:
+Scripts with defer maintain their order of appearance, making it easy to include multiple dependent scripts.
+=======================================================================================================================================================
